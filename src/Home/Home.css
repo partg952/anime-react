@@ -1,0 +1,35 @@
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    }
+    
+    .App div{
+      color: black;
+      padding: 20px;
+      font-weight: 800;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 400px;
+      width: 300px;
+      margin: 10px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+    .App div:hover{
+     margin-top: -10px; 
+    }
+    
+    
+    .App div p{
+      margin: 20px;
+    }
+    
+    
+    .App div img{
+      height: 80%;
+    }
