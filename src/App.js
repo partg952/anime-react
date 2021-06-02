@@ -39,10 +39,10 @@ function App() {
       {data.map(info => {
         console.log(info.title)
         return (
-
-         <Card>
-           <Card.Img src={info.image_url} style={{height:'60%'},{width:'80%'}}/>
-           <Card.Title> {info.title} </Card.Title>
+         <Card variant="primary">
+           
+           <Card.Img src={info.image_url} style={{height:'60%'},{width:'80%'}} />
+           <p> {info.title} </p>
          </Card>
 
         )
