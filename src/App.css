@@ -1,0 +1,23 @@
+.App{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin: 10px;
+
+}
+
+.App div{
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.App div img{
+  height: 80%;
+}
