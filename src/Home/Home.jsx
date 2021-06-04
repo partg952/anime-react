@@ -5,6 +5,7 @@ import {BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button,Alert,Card,Row,Col } from 'react-bootstrap';
+import ReactPlayer from 'react-player'
 function Home() {
 
   const [data,
@@ -38,12 +39,14 @@ function Home() {
         console.log(info.title)
         return (
             <Link to='/info'>
-            <Card variant="primary"  onClick={()=>{
+            <Card bg="dark"  onClick={()=>{
                 console.log('clicked')
                 sessionStorage.setItem('id',info.mal_id)
             }}>
+             
            
-           <Card.Img src={info.image_url} style={{height:'60%'},{width:'80%'}} />
+           <Card.Img src={info.image_url} style={{height:'60%'},{width:'100%'}} variant='top' />
+           
            <p> {info.title} </p>
          </Card>
         </Link>

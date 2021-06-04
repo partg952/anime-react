@@ -1,7 +1,7 @@
 import React from 'react'
-import './Navbar.css'
+import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Navbar, Nav} from 'react-bootstrap'
+import {Navbar, Nav,Image} from 'react-bootstrap'
 
 export default function Navbar2() {
   
@@ -10,7 +10,7 @@ export default function Navbar2() {
     <div>
       <Navbar bg="warning" expand="lg" style={{padding:'20px'}}>
         <Navbar.Brand href="/">
-          <img src='favicon.ico' height='100px' style={{borderRadius:'100px'}} alt="" />
+          <Image src="favicon.ico" roundedCircle height="100px"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <Navbar.Collapse id="basic-navbar-nav">

@@ -13,11 +13,17 @@ export default function Info() {
            setData([response.data])   
        }
        getData();
+       console.log(data)
       
    }, [])
     return (
         <div>
-          
+          {
+              data.map(info=>{
+                  console.log(info)
+                  
+              })
+          }
         </div>
     )
 }
