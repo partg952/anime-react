@@ -1,1 +1,70 @@
-/* No CSS *//*# sourceMappingURL=Info.css.map */
+body {
+  background-color: black;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#cover-image {
+  left: 0;
+  height: 500px;
+  width: 300px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.first {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first h1 {
+  margin-top: 30px;
+}
+
+.first .text {
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  width: 95%;
+}
+
+@media only screen and (max-width: 700px) {
+  .first {
+    display: block;
+  }
+  .text {
+    width: 100%;
+  }
+}
+
+.main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Info.css.map */
