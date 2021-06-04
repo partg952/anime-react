@@ -42,9 +42,12 @@ export default function Info() {
                         <h1> {title} </h1>
                         <h3> {info.title_japanese} </h3>
                         <p> {info.rating} </p>
+                        <div className="synopsis">
                         <h5>
                             {synopsis}
                         </h5>
+                        </div>
+                        
                             <h5>{info.aired.string}</h5>
                             <h6>{info.duration}</h6>
                           </div>

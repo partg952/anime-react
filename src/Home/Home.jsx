@@ -29,7 +29,6 @@ function Home({data}) {
            
            <Card.Img src={info.image_url} style={{height:'60%'},{width:'100%'}} variant='top' />
            
-           <Card.Img src={info.image_url} style={{height:'60%'},{width:'100%'}} variant='top' />
            <p> {info.title} </p>
            
              <p id='score'> {info.score} </p>

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 body{
     background-color: black;
     color: white;
     user-select: none;
+    font-family: 'Work Sans', sans-serif;
 }
 #cover-image{
     
@@ -26,6 +28,7 @@ body{
         margin-top:30px;
     }
     .text{
+        background-color:yellow;
         display: block;
         text-align: center;
         align-items: center;
@@ -49,4 +52,23 @@ body{
 .main{
     align-items: center;
     justify-content: center;
+}
+.synopsis{
+    padding: 10px;
+    &::-webkit-scrollbar{
+        background-color: black;
+        width: 10px;
+
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 50px;
+        
+        background-color: white;
+        &:hover{
+            background-color: rgb(184, 182, 182);
+        }
+    }
+    background-color: transparent;
+    height: 200px;
+    overflow-y: auto;
 }
