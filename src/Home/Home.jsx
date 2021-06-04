@@ -5,29 +5,10 @@ import {BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button,Alert,Card,Row,Col } from 'react-bootstrap';
-import ReactPlayer from 'react-player'
-function Home() {
 
-  const [data,
-    setData] = useState([])
+function Home({data}) {
 
-  useEffect(() => {
-    async function getData() {
-      let res = await axios("https://api.jikan.moe/v3/top/anime")
-      const {data} = res
-      console.log(data)
-      data
-        .top
-        .forEach(info => {
-	const {title,image_url} = info
-          setData(item => [...item,info])
 
-        })
-	console.log(data)
-    }
-
-    getData();
-  }, [])
 
   return (
     <>
@@ -39,7 +20,8 @@ function Home() {
         console.log(info.title)
         return (
             <Link to='/info'>
-            <Card bg="dark"  onClick={()=>{
+            <Card md bg='dark' 
+            border="light"  onClick={()=>{
                 console.log('clicked')
                 sessionStorage.setItem('id',info.mal_id)
             }}>
@@ -47,7 +29,11 @@ function Home() {
            
            <Card.Img src={info.image_url} style={{height:'60%'},{width:'100%'}} variant='top' />
            
+           <Card.Img src={info.image_url} style={{height:'60%'},{width:'100%'}} variant='top' />
            <p> {info.title} </p>
+           
+             <p id='score'> {info.score} </p>
+           
          </Card>
         </Link>
         
