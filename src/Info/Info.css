@@ -60,6 +60,11 @@ body {
   .text {
     width: 100%;
   }
+  #genres {
+    background-color: yellow;
+    width: 100px;
+    overflow-x: auto;
+  }
 }
 
 .main {
@@ -79,7 +84,7 @@ body {
 }
 
 .synopsis::-webkit-scrollbar {
-  background-color: black;
+  background-color: transparent;
   width: 10px;
 }
 
@@ -90,5 +95,49 @@ body {
 
 .synopsis::-webkit-scrollbar-thumb:hover {
   background-color: #b8b6b6;
+}
+
+#genres {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+}
+
+#genres::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1px;
+}
+
+#genres::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: white;
+}
+
+#genres::-webkit-scrollbar-thumb:hover {
+  background-color: #837c7c;
+}
+
+#genres * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  margin: 8px;
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=Info.css.map */

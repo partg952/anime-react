@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 body {
   background-color: black;
   color: white;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -11,6 +13,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: white;
+  min-height: 40px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -54,10 +57,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .App div:hover {
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
-  z-index: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 1;
+  z-index: 1;
 }
 
 .App div:hover img {
@@ -84,7 +87,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media only screen and (max-width: 400px) {
   .App div {
-    width: 300px;
+    width: 250px;
     margin: 40px;
   }
   .App div P {
@@ -115,5 +118,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .App div p {
   margin: 10px;
+}
+
+.title {
+  color: red;
+  height: 40px;
+  background-color: blue;
 }
 /*# sourceMappingURL=Home.css.map */
